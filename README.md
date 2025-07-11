@@ -102,7 +102,7 @@ uvicorn app.main:app --reload --port 8001
 Create a `.env` file in the project root with the following content:
 
 ```env
-DATABASE_URL=postgresql+asyncpg://your_username:your_password@db:5432/task_db
+DATABASE_URL=postgresql+asyncpg://your_username:your_password@db:5432/your_database
 SECRET_KEY=your_secret_key
 ```
 
