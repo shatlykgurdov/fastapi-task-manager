@@ -1,8 +1,3 @@
-Here’s your improved `README.md`, keeping **all content the same**, but fixing formatting, code blocks, structure, and readability:
-
----
-
-```markdown
 # 📝 FastAPI Task Manager
 
 A simple Task Management System built with **FastAPI**, **Async SQLAlchemy**, **Alembic**, **PostgreSQL**, and **JWT Authentication**. It allows users to register, log in, and manage tasks.
