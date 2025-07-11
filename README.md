@@ -71,6 +71,10 @@ Your project requires a .env file in the root directory. Here's how it should lo
 DATABASE_URL=postgresql+asyncpg://your_username:your_password@your_host:5432/your_database
 SECRET_KEY=your_secret_key
 
+You can generate a secure secret key with:
+```bash
+python -c "import secrets; print(secrets.token_urlsafe(32))"
+
 
 ```bash
 # Install dependencies
@@ -90,6 +94,31 @@ uvicorn app.main:app --reload --port 8001
 ---
 
 ### 🐳 Run with Docker
+
+Create a .env file in the project root with the following content:
+
+# Database connection URL (adjust username, password, host, and DB name as needed)
+DATABASE_URL=postgresql+asyncpg://your_user_name:your_passwor@db:5432/task_db
+
+# JWT secret key (replace with a secure random string)
+SECRET_KEY=your_secret_key
+
+Make sure start.sh uses Unix-style (LF) line endings. If you're on Windows and encounter:
+$'\r': command not found
+
+Fix it by:
+In VSCode:
+Open start.sh
+Click CRLF in the bottom-right
+Select LF
+Save the file
+
+
+You can generate a secure secret key with:
+```bash
+python -c "import secrets; print(secrets.token_urlsafe(32))"
+
+
 
 ```bash
 # Build and run the containers
