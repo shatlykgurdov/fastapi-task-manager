@@ -75,11 +75,10 @@ alembic upgrade head
 
 # .env 
 Your project requires a .env file in the root directory. Here's how it should look:
-# Database connection URL (adjust username, password, host, and DB name as needed)
+#Database connection URL (adjust username, password, host, and DB name as needed)
+#JWT secret key (replace with a secure random string)
 
 DATABASE_URL=postgresql+asyncpg://your_username:your_password@your_host:5432/your_database
-
-# JWT secret key (replace with a secure random string)
 SECRET_KEY=your_secret_key
 
 
