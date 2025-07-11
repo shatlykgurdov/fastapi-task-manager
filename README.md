@@ -97,10 +97,7 @@ uvicorn app.main:app --reload --port 8001
 
 Create a .env file in the project root with the following content:
 
-# Database connection URL (adjust username, password, host, and DB name as needed)
 DATABASE_URL=postgresql+asyncpg://your_user_name:your_passwor@db:5432/task_db
-
-# JWT secret key (replace with a secure random string)
 SECRET_KEY=your_secret_key
 
 Make sure start.sh uses Unix-style (LF) line endings. If you're on Windows and encounter:
