@@ -15,38 +15,36 @@ A simple Task Management System built with **FastAPI**, **Async SQLAlchemy**, **
 
 ---
 
-## 🧱 Tech Stack
+### 🧱 Tech Stack
 
-- Python 3.12
-- FastAPI
-- SQLAlchemy (async)
-- PostgreSQL
-- Alembic
-- Docker
-- Pytest
-- Poetry
+* **Python 3.12** – Latest stable version with improved typing and performance
+* **FastAPI** – Modern, fast web framework for building APIs with Python 3.6+
+* **SQLAlchemy (async)** – Async ORM for database interaction
+* **Pydantic** – Data validation and parsing using Python type annotations
+* **Alembic** – Database migration tool for SQLAlchemy
+* **PostgreSQL** – Relational database for storing tasks and users
+* **Docker & Docker Compose** – For containerized deployment
+* **Pytest + HTTPX** – For automated API testing
+* **Poetry** – Tool for dependency management and packaging
 
 ---
 
-## 📂 Project Structure
+### 📁 Project Structure
 
-```
-
-fastapi\_task\_manager/
+```bash
+.
 ├── app/
-│   ├── main.py
-│   ├── models/
-│   ├── schemas/
-│   ├── routes/
-│   ├── db/
-│   ├── core/
-├── alembic/
-├── tests/
-├── Dockerfile
-├── docker-compose.yml
-├── pyproject.toml
-└── README.md
-
+│   ├── models.py         # SQLAlchemy models
+│   ├── schemas.py        # Pydantic models for validation and serialization
+│   ├── routes/           # Route handlers
+│   ├── database.py       # Database session and engine setup
+│   └── main.py           # FastAPI app initialization
+├── alembic/              # Database migrations
+├── docker-compose.yml    # Docker orchestration
+├── Dockerfile            # Docker container definition
+├── .env.example          # Environment variable template
+├── README.md
+└── pyproject.toml        # Poetry configuration
 ````
 
 ---
